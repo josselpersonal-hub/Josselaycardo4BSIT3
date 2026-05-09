@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jossel Aycardo | BSIT Portfolio</title>
+    <meta name="description"
+        content="Personal portfolio of Jossel Aycardo, a 4th-year BSIT student and aspiring software developer showcasing projects in web, mobile, and app development.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <span class="logo-bracket">&lt;</span>Jossel<span class="logo-accent">.</span>dev<span
+                class="logo-bracket">/&gt;</span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+
+    <main>
+        <!-- ========== HERO SECTION ========== -->
+        <section id="home" class="hero">
+            <div class="hero-bg">
+                <div class="particle" style="--x:10%;--y:20%;--s:6px;--d:3s"></div>
+                <div class="particle" style="--x:85%;--y:15%;--s:4px;--d:5s"></div>
+                <div class="particle" style="--x:25%;--y:75%;--s:8px;--d:4s"></div>
+                <div class="particle" style="--x:70%;--y:60%;--s:5px;--d:6s"></div>
+                <div class="particle" style="--x:55%;--y:85%;--s:3px;--d:3.5s"></div>
+                <div class="particle" style="--x:40%;--y:35%;--s:7px;--d:4.5s"></div>
+                <div class="glow glow-1"></div>
+                <div class="glow glow-2"></div>
+                <div class="glow glow-3"></div>
+            </div>
+            <div class="hero-container">
+                <div class="hero-text" data-aos="fade-right">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        Available for Projects
+                    </div>
+                    <h1>
+                        Hi, I'm <span class="name-highlight">Jossel Aycardo</span>
+                    </h1>
+                    <div class="typewriter-wrapper">
+                        <span class="static-text">A </span>
+                        <span class="typewriter" id="typewriter"></span>
+                        <span class="cursor-blink">|</span>
+                    </div>
+                    <p class="hero-desc">
+                        4th-year Bachelor of Science in Information Technology student with a passion for building
+                        elegant software solutions — from mobile apps to full-stack web platforms.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-briefcase"></i> View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-ghost">
+                            <i class="fas fa-paper-plane"></i> Get In Touch
+                        </a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/josselpersonal-hub" class="social-icon" aria-label="GitHub"><i
+                                class="fab fa-github"></a></i></a>
+                        <a href="https://www.linkedin.com/in/aycardo-jossel-c-004a63381?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                            class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></a></i></a>
+                        <a href="https://www.facebook.com/Uteng6" class="social-icon" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></a></i></a>
+                    </div>
+                </div>
+                <div class="hero-image-wrap" data-aos="fade-left">
+                    <div class="profile-ring"></div>
+                    <div class="profile-ring-2"></div>
+                    <div class="profile-container">
+                        <img src="assets/picture.png" alt="Jossel Aycardo" class="profile-photo" id="profile-photo">
+                        <div class="profile-glow"></div>
+                    </div>
+                    <div class="floating-badge badge-kotlin">
+                        <i class="fab fa-android"></i> Kotlin
+                    </div>
+                    <div class="floating-badge badge-web">
+                        <i class="fas fa-globe"></i> Web Dev
+                    </div>
+                    <div class="floating-badge badge-firebase">
+                        <i class="fas fa-fire"></i> Firebase
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-indicator">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span>Scroll Down</span>
+            </a>
+        </section>
+
+        <!-- ========== ABOUT SECTION ========== -->
+        <section id="about" class="about reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Who I Am</span>
+                    <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-image-col reveal-left">
+                        <div class="about-photo-frame">
+                            <img src="assets/picture.png" alt="Jossel Aycardo" class="about-photo">
+                            <div class="about-photo-deco deco-1"></div>
+                            <div class="about-photo-deco deco-2"></div>
+                        </div>
+                        <div class="info-card glass-card">
+                            <div class="info-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <span class="info-label">Program</span>
+                                    <span class="info-value">BSIT — 4th Year</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <span class="info-label">Section</span>
+                                    <span class="info-value">4th year BSIT-3</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <span class="info-label">Status</span>
+                                    <span class="info-value">Open to Opportunities</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-text-col reveal-right">
+                        <h3 class="about-greeting">Nice to meet you! 👋</h3>
+                        <p>I'm <strong>Jossel Aycardo</strong>, a dedicated and enthusiastic 4th-year BSIT student with
+                            a genuine love for technology and problem-solving. I thrive at the intersection of
+                            creativity and logic — whether I'm designing a mobile learning app, building a client
+                            website, or architecting a database system.</p>
+                        <p>My academic journey has equipped me with hands-on experience across multiple domains: Android
+                            development with Kotlin, web design and development, database management, and client-facing
+                            software delivery. I take pride in writing clean, maintainable code and crafting user
+                            experiences that truly make a difference.</p>
+                        <p>Outside of coding, I'm always exploring new technologies, improving my craft, and taking on
+                            real-world projects that challenge me to grow. My capstone project,
+                            <strong>WordHuntr</strong>, reflects my commitment to building meaningful software that
+                            solves real educational problems.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="5">0</span>
+                                <span class="stat-label">Projects<br>Completed</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="3">0</span>
+                                <span class="stat-label">Client<br>Projects</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="2">0</span>
+                                <span class="stat-label">Years of<br>Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SKILLS SECTION ========== -->
+        <section id="skills" class="skills reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">What I Know</span>
+                    <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card glass-card reveal-up" style="--delay: 0.1s">
+                        <div class="skill-icon-wrap" style="--icon-color: #a78bfa;">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile Development</h3>
+                        <p>Android apps with Kotlin, Firebase Firestore, Realtime Database, and modern MVVM architecture
+                            patterns.</p>
+                        <div class="skill-tags">
+                            <span class="tag">Kotlin</span>
+                            <span class="tag">Android SDK</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                    </div>
+                    <div class="skill-card glass-card reveal-up" style="--delay: 0.2s">
+                        <div class="skill-icon-wrap" style="--icon-color: #60a5fa;">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Responsive, modern websites using HTML5, CSS3, and JavaScript. Client-ready solutions with
+                            clean UI/UX design.</p>
+                        <div class="skill-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-card glass-card reveal-up" style="--delay: 0.3s">
+                        <div class="skill-icon-wrap" style="--icon-color: #34d399;">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Database & Backend</h3>
+                        <p>Structuring and querying databases, integrating cloud services, and building backend logic
+                            for real-world applications.</p>
+                        <div class="skill-tags">
+                            <span class="tag">Firestore</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">REST APIs</span>
+                        </div>
+                    </div>
+                    <div class="skill-card glass-card reveal-up" style="--delay: 0.4s">
+                        <div class="skill-icon-wrap" style="--icon-color: #f472b6;">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <p>Designing intuitive interfaces and visual experiences that engage users and reflect strong
+                            aesthetic sensibility.</p>
+                        <div class="skill-tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">XML Layouts</span>
+                            <span class="tag">Canva</span>
+                        </div>
+                    </div>
+                    <div class="skill-card glass-card reveal-up" style="--delay: 0.5s">
+                        <div class="skill-icon-wrap" style="--icon-color: #fbbf24;">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools & Workflow</h3>
+                        <p>Working with industry-standard development environments, version control systems, and project
+                            management tools.</p>
+                        <div class="skill-tags">
+                            <span class="tag">Git</span>
+                            <span class="tag">Android Studio</span>
+                            <span class="tag">VS Code</span>
+                        </div>
+                    </div>
+                    <div class="skill-card glass-card reveal-up" style="--delay: 0.6s">
+                        <div class="skill-icon-wrap" style="--icon-color: #f87171;">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>App Development</h3>
+                        <p>Building cross-functional applications that serve real users — from academic tools to
+                            business and event management systems.</p>
+                        <div class="skill-tags">
+                            <span class="tag">Capstone Dev</span>
+                            <span class="tag">Client Work</span>
+                            <span class="tag">App Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PROJECTS SECTION ========== -->
+        <section id="projects" class="projects reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">What I've Built</span>
+                    <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="project-grid">
+
+                    <!-- WordHuntr -->
+                    <div class="project-card glass-card reveal-up" style="--delay: 0.1s">
+                        <div class="project-header">
+                            <div class="project-icon-wrap" style="--proj-color: #7c3aed;">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="project-badges">
+                                <span class="proj-badge capstone">Capstone</span>
+                                <span class="proj-badge mobile">Mobile App</span>
+                            </div>
+                        </div>
+                        <h3 class="project-title">WordHuntr</h3>
+                        <p class="project-desc">
+                            My capstone project — an Android-based vocabulary learning app designed for students.
+                            WordHuntr features interactive quiz games (4 Pics 1 Word, Unscramble, Spelling), a
+                            teacher-student classroom system, gamified badge rewards, a personal dictionary, and
+                            real-time progress tracking powered by Firebase Firestore.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">Android</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Firestore</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-number">#01</div>
+                            <a href="#" class="project-link-btn">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Dental Clinic -->
+                    <div class="project-card glass-card reveal-up" style="--delay: 0.2s">
+                        <div class="project-header">
+                            <div class="project-icon-wrap" style="--proj-color: #0ea5e9;">
+                                <i class="fas fa-tooth"></i>
+                            </div>
+                            <div class="project-badges">
+                                <span class="proj-badge first-year">1st Year</span>
+                                <span class="proj-badge web">Web Project</span>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Dental Clinic System</h3>
+                        <p class="project-desc">
+                            My first-year project — a web-based dental clinic management system that handles patient
+                            records, appointment scheduling, and clinic information. This project marked my introduction
+                            to full-stack web development and database integration, setting the foundation for future
+                            projects.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Database</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-number">#02</div>
+                            <a href="#" class="project-link-btn">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Recipe Application -->
+                    <div class="project-card glass-card reveal-up" style="--delay: 0.3s">
+                        <div class="project-header">
+                            <div class="project-icon-wrap" style="--proj-color: #f59e0b;">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <div class="project-badges">
+                                <span class="proj-badge appdev">App Dev</span>
+                                <span class="proj-badge mobile">Mobile App</span>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Recipe Application</h3>
+                        <p class="project-desc">
+                            A project developed for my App Development subject — a recipe browsing and management
+                            application that allows users to explore, save, and organize their favorite recipes. Focused
+                            on delivering a smooth, intuitive user interface with clean navigation and categorized
+                            recipe discovery.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">App Development</span>
+                            <span class="tech-tag">UI/UX</span>
+                            <span class="tech-tag">Database</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-number">#03</div>
+                            <a href="#" class="project-link-btn">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Logistic II -->
+                    <div class="project-card glass-card reveal-up" style="--delay: 0.4s">
+                        <div class="project-header">
+                            <div class="project-icon-wrap" style="--proj-color: #10b981;">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="project-badges">
+                                <span class="proj-badge client">Client Project</span>
+                                <span class="proj-badge web">Web System</span>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Logistic II</h3>
+                        <p class="project-desc">
+                            A client project I independently developed — a logistics management system designed to
+                            streamline operations for the client's business. The system manages tracking, inventory, and
+                            delivery workflows, providing a centralized platform that improves efficiency and reduces
+                            manual processes.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Web Dev</span>
+                            <span class="tech-tag">Database</span>
+                            <span class="tech-tag">Client Work</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-number">#04</div>
+                            <a href="#" class="project-link-btn">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- RSVP Website -->
+                    <div class="project-card glass-card reveal-up" style="--delay: 0.5s">
+                        <div class="project-header">
+                            <div class="project-icon-wrap" style="--proj-color: #ec4899;">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="project-badges">
+                                <span class="proj-badge client">Client Project</span>
+                                <span class="proj-badge web">Web Design</span>
+                            </div>
+                        </div>
+                        <h3 class="project-title">RSVP Wedding Website</h3>
+                        <p class="project-desc">
+                            A wedding website I created for a client — a beautifully designed RSVP and event information
+                            platform tailored to the couple's vision. Features include an interactive RSVP form, event
+                            schedule, venue details, and a photo gallery. Delivered with a focus on elegance,
+                            responsiveness, and a memorable user experience.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-number">#05</div>
+                            <a href="#" class="project-link-btn">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CONTACT SECTION ========== -->
+        <section id="contact" class="contact reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Let's Connect</span>
+                    <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="contact-layout">
+                    <div class="contact-info-col reveal-left">
+                        <div class="contact-info glass-card">
+                            <h3>Ready to work together?</h3>
+                            <p>Whether you have a project in mind, need a freelance developer, or just want to connect —
+                                I'd love to hear from you. Let's build something great.</p>
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                                    <div>
+                                        <span class="contact-label">Email</span>
+                                        <span class="contact-value">jossel.personal@gmail.com</span>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                    <div>
+                                        <span class="contact-label">Location</span>
+                                        <span class="contact-value">Philippines</span>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="contact-icon"><i class="fas fa-graduation-cap"></i></div>
+                                    <div>
+                                        <span class="contact-label">Section</span>
+                                        <span class="contact-value">4th year BSIT-3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-col reveal-right">
+                        <form class="contact-form glass-card" id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" placeholder="Juan dela Cruz" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" placeholder="juan@email.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" placeholder="Project Inquiry">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="5" placeholder="Tell me about your project..."
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                            <div id="form-status" class="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-bracket">&lt;</span>Jossel<span class="logo-accent">.</span>dev<span
+                    class="logo-bracket">/&gt;</span>
+            </div>
+            <p class="footer-tagline">Building meaningful software, one project at a time.</p>
+            <div class="footer-socials">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <p class="footer-copy">&copy; 2026 Jossel Aycardo &bull; 4th year BSIT-3. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
